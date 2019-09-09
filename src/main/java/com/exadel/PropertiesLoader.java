@@ -15,7 +15,7 @@ public class PropertiesLoader {
         try {
             fis = new FileInputStream(pathToProperties);
         } catch (FileNotFoundException e) {
-
+			log.error("File " + pathToProperties + " not found");
         }
         Properties properties = new Properties();
         try {
